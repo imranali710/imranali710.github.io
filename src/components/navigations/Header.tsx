@@ -29,9 +29,6 @@ const Header = () => {
           <Link to="/" className="hover:text-gray-400 transition-colors">
             Home
           </Link>
-          <Link to="/about" className="hover:text-gray-400 transition-colors">
-            About
-          </Link>
           <Link to="/projects" className="hover:text-gray-400 transition-colors">
             Projects
           </Link>
@@ -40,6 +37,9 @@ const Header = () => {
           </Link>
           <Link to="/contact" className="hover:text-gray-400 transition-colors">
             Contact
+          </Link>
+          <Link to="/about" className="hover:text-gray-400 transition-colors">
+            About
           </Link>
         </nav>
 
@@ -63,13 +63,6 @@ const Header = () => {
               Home
             </Link>
             <Link 
-              to="/about" 
-              onClick={toggleMenu}
-              className="block py-2 hover:text-blue-400 transition-colors"
-            >
-              About
-            </Link>
-            <Link 
               to="/projects" 
               onClick={toggleMenu}
               className="block py-2 hover:text-blue-400 transition-colors"
@@ -89,6 +82,13 @@ const Header = () => {
               className="block py-2 hover:text-blue-400 transition-colors"
             >
               Contact
+            </Link>
+            <Link 
+              to="/about" 
+              onClick={toggleMenu}
+              className="block py-2 hover:text-blue-400 transition-colors"
+            >
+              About
             </Link>
           </div>
         </div>
