@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 
 const HomePage = () => {
   
@@ -31,12 +33,12 @@ const HomePage = () => {
 
         {/* Optional: Call to Action Button Area */}
         <div className="mt-12 md:mt-16">
-          <a // Using <a> for navigation, could be <button> or Link from react-router
-            href="projects" // Link to your projects section or contact page
+          <Link // Using <a> for navigation, could be <button> or Link from react-router
+            to="/projects" // Link to your projects section or contact page
             className={`inline-block  text-black font-medium py-3 px-8 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 border`} // Example button styling
           >
             View My Work
-          </a>
+          </Link>
           {/* You could add more links/buttons here */}
           {/* <a href="#contact" className={`ml-4 ${accentColor} ${accentHoverColor} font-medium`}>Get In Touch</a> */}
         </div>
