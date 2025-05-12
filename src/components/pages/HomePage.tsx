@@ -1,51 +1,53 @@
 import { Link } from 'react-router-dom';
-
+import card from '../../assets/card.png';
+import business_card from '../../assets/business_card.png';
 
 const HomePage = () => {
-  
-
   return (
-    // Adjusted Padding: Reduced overall padding, more vertical than horizontal.
-    // Added min-height to help center content vertically on shorter viewports.
-    <div className="flex items-center justify-center min-h-screen bg-gray-100 text-white px-4 sm:px-6 lg:px-8">
-      {/* Main content container with a max-width */}
-      <div className="max-w-4xl mx-auto text-center py-16 md:py-24"> {/* Added some vertical padding */}
-
-        {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black mb-4 md:mb-6"> {/* Slightly adjusted sizes/margin */}
-          I'm Imran
-        </h1>
-
-        {/* Subheading - Using spans for potential individual styling and better spacing */}
-        <div className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-10 md:mb-12"> {/* Adjusted size/margin */}
-          <span>Developer</span>
-          <span className="text-gray-700 mx-2">|</span> {/* Softer color for separator */}
-          {/* Consider rephrasing 'NEET Failed' based on target audience */}
-          <span className={`text-gray-700 mx-2`}>NEET Failed</span> {/* Example applying accent color */}
-          <span className="text-gray-700 mx-2">|</span>
-          <span>Science Enthusiast</span>
+    <div className="bg-gray-100 text-white">
+      {/* Hero Section */}
+      <div className="flex items-center justify-center py-6 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center mt-16 mb-4">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-black mb-4">
+            I'm Imran
+          </h1>
+          <div className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-10">
+            <span>Software Developer</span>
+          </div>
+          <p className="text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            I’m a developer with a passion for crafting software that not only solves real-world problems but also drives innovation. With a strong foundation in full-stack web application development, AI integration, and microservice architectures, I specialize in transforming ideas into impactful solutions—from concept to launch—efficiently and with precision.
+          </p>
+          <div className="mt-6">
+            <Link
+              to="/projects"
+              className="inline-block text-black font-medium py-3 px-8 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 border"
+            >
+              View My Work
+            </Link>
+          </div>
+          {/* Downward Arrow */}
+          <div className="mt-8">
+            <span className="text-5xl text-black animate-bounce">↓</span>
+          </div>
         </div>
-
-        {/* Introduction Paragraph */}
-        <p className="text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed md:leading-loose"> {/* Increased line-height, constrained max-width */}
-          I’m a developer with a passion for crafting software that not only solves real-world problems but also drives innovation. With a strong foundation in full-stack web application development, AI integration, and microservice architectures, I specialize in transforming ideas into impactful solutions—from concept to launch—efficiently and with precision.
-        </p>
-
-        {/* Optional: Call to Action Button Area */}
-        <div className="mt-12 md:mt-16">
-          <Link // Using <a> for navigation, could be <button> or Link from react-router
-            to="/projects" // Link to your projects section or contact page
-            className={`inline-block  text-black font-medium py-3 px-8 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 border`} // Example button styling
-          >
-            View My Work
-          </Link>
-          {/* You could add more links/buttons here */}
-          {/* <a href="#contact" className={`ml-4 ${accentColor} ${accentHoverColor} font-medium`}>Get In Touch</a> */}
-        </div>
-
+      </div>
+      {/* Card Section */}
+      <div className="flex flex-col items-center justify-center bg-gray-100 py-4 px-4 sm:px-6 md:px-8">
+        <img
+          src={card}
+          alt="Imran Ali Logo"
+          className="h-auto mb-6"
+        />
+        <a
+          href={business_card}
+          download="Imran_Ali_Business_Card.png"
+          className="inline-block mb-4 text-black font-medium py-3 px-6 rounded-lg transition duration-300 ease-in-out transform hover:-translate-y-1 border"
+        >
+          Download My Card
+        </a>
       </div>
     </div>
   );
-}
+};
 
 export default HomePage;
