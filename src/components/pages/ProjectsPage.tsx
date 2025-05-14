@@ -14,6 +14,12 @@ const projects = [
     tags: ["Python", "Click", "SQLite"],
     link: "/fee-tracker",
   },
+  {
+    title: "Website for Restaurant",
+    description: "A responsive website for a restaurant with menu, reservation, and contact features.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    link: "/fee-tracker",
+  },
   // Add more projects here
 ];
 
