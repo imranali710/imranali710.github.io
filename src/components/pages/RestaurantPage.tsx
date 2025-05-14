@@ -1,6 +1,6 @@
 function RestaurantPage() {
   const handleRedirect = () => {
-    window.location.href = "https://imranali710.github.io/RestaurantShowcase/"; // Replace with your actual URL
+    window.open("https://imranali710.github.io/RestaurantShowcase/", "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -12,7 +12,7 @@ function RestaurantPage() {
           </h1>
           <button
             onClick={handleRedirect}
-            className="mt-4 px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+            className="mt-4 px-6 py-2 bg-gray-800 text-white rounded-lg hover:bg-blue-700 transition-colors"
           >
             Visit Now
           </button>
