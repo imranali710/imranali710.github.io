@@ -32,8 +32,8 @@ const Header = () => {
           <Link to="/projects" className="hover:text-gray-400 transition-colors">
             Projects
           </Link>
-          <Link to="/blog" className="hover:text-gray-400 transition-colors">
-            Blog
+          <Link to="/pricing" className="hover:text-gray-400 transition-colors">
+            Pricing
           </Link>
           <Link to="/contact" className="hover:text-gray-400 transition-colors">
             Contact
@@ -70,11 +70,11 @@ const Header = () => {
               Projects
             </Link>
             <Link 
-              to="/blog" 
+              to="/pricing" 
               onClick={toggleMenu}
               className="block py-2 hover:text-blue-400 transition-colors"
             >
-              Blog
+              Pricing
             </Link>
             <Link 
               to="/contact" 
