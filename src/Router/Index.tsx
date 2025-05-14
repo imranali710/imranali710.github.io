@@ -7,6 +7,7 @@ import AboutPage from '../components/pages/AboutPage';
 import ContactPage from '../components/pages/ContactPage';
 import ProjectsPage from '../components/pages/ProjectsPage';
 import PricingPage from '../components/pages/PricingPage';
+import RestaurantPage from '../components/pages/RestaurantPage';
 import SMSPage from '../components/pages/SMSPage';
 
 
@@ -21,7 +22,7 @@ const AppRouter = () => {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/pricing" element={<PricingPage />} />
-        <Route path="/restaurant-demo" element={<PricingPage />} />
+        <Route path="/restaurant-demo" element={<RestaurantPage />} />
         <Route path="/projects">
           <Route path="school-management-system" element={<SMSPage />} />
           <Route index element={<ProjectsPage />} />
