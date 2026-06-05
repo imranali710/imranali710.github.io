@@ -1,0 +1,13 @@
+[{
+  "relation": [
+    "delegate_permission/common.handle_all_urls", 
+    "delegate_permission/common.get_login_creds"
+  ],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.example.vault_pro",
+    "sha256_cert_fingerprints": [
+      "63:A1:A7:14:B4:51:EF:38:B6:76:7E:B7:D3:4D:03:9F:BB:E8:00:D1:7D:0C:B9:F3:1D:E6:EF:3E:97:A4:24:6A"
+    ]
+  }
+}]
