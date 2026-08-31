@@ -32,7 +32,7 @@ const HomePage = () => {
             I'm Imran
           </h1>
           <div className="text-lg md:text-xl lg:text-2xl text-gray-700 mb-10">
-            <span>Software Developer</span>
+            <span>System Architect & Full Stack Developer</span>
           </div>
           <p className="text-base md:text-lg lg:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
             I’m a developer with a passion for crafting software that not only solves real-world problems but also drives innovation. With a strong foundation in full-stack web application development, AI integration, and microservice architectures, I specialize in transforming ideas into impactful solutions—from concept to launch—efficiently and with precision.
